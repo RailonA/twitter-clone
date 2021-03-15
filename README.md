@@ -35,13 +35,6 @@ A rails Twitter CLone
 Run `rails db:migrate` and make sure the commande succeded
 
 
-#### Test the tables
-
-- First run `rails c`
-- In the rails console make sure all the tables are working correctly. Run `User`
-- Then create at least one user, one post and one comment Run 
-1. `u = User.create(user_name: 'Railon A', email: 'railonacosta@gmail.com', password: 'Abc@123!', password_confirmation: 'Abc@123!')` Creates a user
-2. `pp User.first` shows details of the first user
 
 #### Test all in the browser
 
@@ -50,6 +43,16 @@ Run `rails db:migrate` and make sure the commande succeded
 - This page should display ⬇️
 - ![screenshot](./app/assets/images/twitter_sign_up_page.png)
 - Create a new user by putting informations inside the text fields
+
+#### Test the tables
+
+- First run `rails c`
+- In the rails console make sure all the tables are working correctly. Run `User`
+- Then look at all User to make sure that information used to greate the user account was pushed successfully to the database. 
+1. `user = User`
+2. `pp user.all` shows details of all the users
+
+
 
 ## 🤝 Contributing
 
